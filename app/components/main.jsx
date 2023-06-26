@@ -4,7 +4,13 @@ import Image from "next/image";
 export default function Main() {
   return (
     <div className="w-full h-auto pt-24 mt-[-20px] bg-neutral-400">
-      <h1 className="text-white text-7xl text-center m-28 mt-[-50px] underline">Stack</h1>
+      
+      {/* Scroll Effect */}
+      <h1 className="text-white text-7xl text-center m-28 mt-[-50px] underline">
+        Stack
+      </h1>
+      {/* Scroll Effect */}
+
       <section className="mb-10">
         <div className="flex flex-row items-center justify-center">
           <Image
@@ -25,7 +31,7 @@ export default function Main() {
               "z-10 opacity-95 mr-36 mb-16 hover:cursor-pointer hover:scale-125 easi-in duration-300"
             }
           />
-                    <Image
+          <Image
             src="/js1.png"
             alt="js_profile"
             width={95}
@@ -51,7 +57,7 @@ export default function Main() {
             width={200}
             height={200}
             className={
-              "z-10 opacity-95 ml-8 mr-44 hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 ml-8 mr-44 hover:cursor-pointer hover:scale-125 easi-in duration-300 animate-wiggle"
             }
           />
           <Image
@@ -95,8 +101,14 @@ export default function Main() {
         </div>
       </section>
       <section className="h-[800px] w-full bg-neutral-500">
-
+        <h1>About</h1>
       </section>
+      <section className="h-[800px] w-full bg-pink-500">
+        <h1>Projects</h1>
+      </section>
+      <footer className="h-[800px] w-full bg-gray-800">
+        <h1>Footer</h1>
+      </footer>
     </div>
   );
 }

@@ -117,7 +117,7 @@ export default function Header() {
           <span className="absolute w-[365px] h-[100px] bg-white mt-8 -ml-9"></span>
           <span className="absolute w-[365px] h-[100px] bg-white mt-5 ml-5"></span>
           <span className="flex">
-            <p className="mr-7 text-zinc-700 z-10 under">SABRINA</p>
+            <p className="mr-7 text-zinc-700 z-10 under animate-wiggle">SABRINA</p>
             <p className="font-bold text-white">WEB</p>
           </span>
           <span>
