@@ -12,7 +12,7 @@ export default function Main() {
   })
 
   return (
-    <div className="w-full h-auto pt-24 mt-[-20px] bg-neutral-400 max-sm:mt-[-120px] max-sm:overflow-hidden overflow-hidden">
+    <div className="w-full h-auto pt-24 mt-[-20px] bg-neutral-400 max-sm:mt-[-240px] max-sm:overflow-hidden overflow-hidden">
       
       {/* Scroll Effect */}
       <h1 data-aos="fade-left" className="text-white text-7xl text-center m-28 max-sm:m-10 mt-[-50px] max-sm:mt-[-50px] max-sm:text-4xl ">
