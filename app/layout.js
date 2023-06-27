@@ -4,9 +4,9 @@ export default function RootLayout({ children }) {
   return (
       <html>
         <head />
-        <body className="">
+        <body>
           {children}
-          <script src="../scroll-out.js"></script>
+{/*           <script src="../scroll-out.js"></script> */}
         </body>
       </html>
   );

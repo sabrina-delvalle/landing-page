@@ -12,7 +12,7 @@ export default function Header() {
   })
 
   return (
-    <div className="h-[800px] relative min-h-screen">
+    <div className="h-[800px] max-sm:w-full relative min-h-screen max-sm:overflow-hidden">
       <header className="relative flex justify-center bg-neutral-700 w-full h-20">
         <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-5 max-sm:p-1 max-sm:px-0 p-6 px-20 text-white w-4/5">
           <a
@@ -51,7 +51,7 @@ export default function Header() {
         </nav>
       </header>
 
-      <div className="bg-city-bg w-full h-[700px] max-sm:w-auto bg-center bg-cover">
+      <div className="bg-city-bg w-full max-sm:w-full h-[700px] max-sm:h-[600px] bg-center bg-cover">
         <div>
           <Image
             src="/gray_logo.svg"
@@ -91,8 +91,8 @@ export default function Header() {
             <p>20    </p>            
             <p>21    </p>            
           </pre>
-          <div data-aos="fade-right" className="flex flex-row absolute mt-[240px] max-sm:mt-[310px] ml-[1300px] max-sm:ml-[290px]">
-            <a href="https://github.com/sabrina-delvalle"><Image
+          <div data-aos="fade-right" className="flex flex-row absolute mt-[280px] max-sm:mt-[300px] ml-[1300px] max-sm:ml-[290px]">
+            <a href="https://www.linkedin.com/in/sabrinadelvalle/"><Image
               src="/in.png"
               alt="linkedin_profile"
               width={39}
@@ -123,7 +123,7 @@ export default function Header() {
             "absolute flex justify-center items-center z-0 mt-[550px] ml-[1275px] animate-bounce w-12 h-12 max-sm:mt-[475px] max-sm:ml-[335px]"
           }
         />
-        <div className="absolute text-[90px] max-sm:text-[40px] ml-[750px] mt-[160px] max-sm:mt-[175px] z-0 max-sm:ml-[87px]">
+        <div className="absolute text-[90px] max-sm:text-[40px] ml-[750px] mt-[160px] max-sm:mt-[175px] z-0 max-sm:ml-[80px]">
           <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-8 -ml-9"></span>
           <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-5 ml-5"></span>
           <span className="flex">
