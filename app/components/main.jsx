@@ -1,18 +1,27 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import Image from "next/image";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export default function Main() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000, mirror: true })
+  })
+
   return (
     <div className="w-full h-auto pt-24 mt-[-20px] bg-neutral-400">
       
       {/* Scroll Effect */}
-      <h1 className="text-white text-7xl text-center m-28 mt-[-50px] underline">
+      <h1 data-aos="fade-left" className="text-white text-7xl text-center m-28 mt-[-50px] ">
         Stack
       </h1>
       {/* Scroll Effect */}
 
       <section className="mb-10">
-        <div className="flex flex-row items-center justify-center">
+        <div data-aos="fade-left" className="flex flex-row items-center justify-center">
           <Image
             src="/css.png"
             alt="css_profile"
@@ -41,7 +50,7 @@ export default function Main() {
             }
           />
         </div>
-        <div className="flex flex-row items-center justify-center pt-16 ml-20">
+        <div data-aos="fade-right" className="flex flex-row items-center justify-center pt-16 ml-20">
           <Image
             src="/express.png"
             alt="express"
@@ -57,7 +66,7 @@ export default function Main() {
             width={200}
             height={200}
             className={
-              "z-10 opacity-95 ml-8 mr-44 hover:cursor-pointer hover:scale-125 easi-in duration-300 animate-wiggle"
+              "z-10 opacity-95 ml-8 mr-44 hover:cursor-pointer hover:scale-125 easi-in duration-300"
             }
           />
           <Image
@@ -70,7 +79,7 @@ export default function Main() {
             }
           />
         </div>
-        <div className="flex flex-row items-center justify-center pt-16 ml-20">
+        <div data-aos="fade-left" className="flex flex-row items-center justify-center pt-16 ml-20">
           <Image
             src="/nodej.png"
             alt="nodejs_profile"
@@ -100,14 +109,14 @@ export default function Main() {
           />
         </div>
       </section>
-      <section className="h-[800px] w-full bg-neutral-500">
-        <h1>About</h1>
+      <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex items-center justify-center">
+        <h1 data-aos="zoom-in" className="text-white text-9xl">About</h1>
       </section>
-      <section className="h-[800px] w-full bg-pink-500">
-        <h1>Projects</h1>
+      <section  data-aos="fade-left" className="h-[800px] w-full bg-pink-500 flex items-center justify-center">
+        <h1 data-aos="zoom-in" className="text-white text-9xl">Projects</h1>
       </section>
-      <footer className="h-[800px] w-full bg-gray-800">
-        <h1>Footer</h1>
+      <footer data-aos="fade-right" className="h-[800px] w-full bg-gray-800 flex items-center justify-center">
+        <h1 data-aos="zoom-in" className="text-white text-9xl">Footer</h1>
       </footer>
     </div>
   );
