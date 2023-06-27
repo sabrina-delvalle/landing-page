@@ -12,7 +12,7 @@ export default function Header() {
   })
 
   return (
-    <div className="h-[800px] max-sm:w-full relative min-h-screen max-sm:overflow-hidden">
+    <div className="h-[800px] max-sm:w-full relative min-h-screen overflow-hidden max-sm:overflow-hidden">
       <header className="relative flex justify-center bg-neutral-700 w-full h-20">
         <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-5 max-sm:p-1 max-sm:px-0 p-6 px-20 text-white w-4/5">
           <a

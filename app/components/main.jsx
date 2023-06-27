@@ -12,7 +12,7 @@ export default function Main() {
   })
 
   return (
-    <div className="w-full h-auto pt-24 mt-[-20px] bg-neutral-400 max-sm:mt-[-120px] max-sm:overflow-hidden">
+    <div className="w-full h-auto pt-24 mt-[-20px] bg-neutral-400 max-sm:mt-[-120px] max-sm:overflow-hidden overflow-hidden">
       
       {/* Scroll Effect */}
       <h1 data-aos="fade-left" className="text-white text-7xl text-center m-28 max-sm:m-10 mt-[-50px] max-sm:mt-[-50px] max-sm:text-4xl ">
@@ -109,7 +109,7 @@ export default function Main() {
           />
         </div>
       </section>
-      <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex items-center justify-center">
+      <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex items-center justify-center overflow-hidden">
         <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">About</h1>
       </section>
       <section  data-aos="fade-left" className="h-[800px] w-full bg-pink-500 flex items-center justify-center">
