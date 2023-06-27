@@ -124,7 +124,7 @@ export default function Header() {
           }
         />
         <div className="absolute text-[90px] max-sm:text-[40px] ml-[750px] mt-[160px] max-sm:mt-[175px] z-0 max-sm:ml-[80px]">
-          <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-8 -ml-9"></span>
+          <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-8 max-sm:mt-7 -ml-9"></span>
           <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-5 ml-5"></span>
           <span className="flex">
             <p className="mr-7 max-sm:my-[15px] text-zinc-700 z-10 under animate-wiggle">SABRINA</p>
