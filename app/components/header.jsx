@@ -101,7 +101,7 @@ export default function Header() {
                 "z-10 hover:cursor-pointer hover:scale-125 easi-in duration-300"
               }
             /></a>
-            <a href="https://www.linkedin.com/in/sabrinadelvalle/">
+            <a href="https://github.com/sabrina-delvalle">
             <Image
               src="/github.png"
               alt="github_profile"
