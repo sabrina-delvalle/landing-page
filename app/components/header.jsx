@@ -12,9 +12,9 @@ export default function Header() {
   })
 
   return (
-    <div className="h-[800px] max-sm:w-full relative min-h-screen overflow-hidden max-sm:overflow-hidden">
+    <div className="h-[800px] max-sm:w-full max-md:w-full min-lg:w-full min-xl:w-full relative min-h-screen overflow-hidden max-sm:overflow-hidden">
       <header className="relative flex justify-center bg-neutral-700 w-full h-20">
-        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-5 max-sm:p-1 max-sm:px-0 p-6 px-20 text-white w-4/5">
+        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-3 max-sm:p-4 max-md:gap-12 max-md:p-10 p-6 px-20 text-white w-4/5">
           <a
             href="/"
             className="text-base max-sm:text-sm  hover:scale-125 easi-in duration-300"
@@ -31,8 +31,8 @@ export default function Header() {
             <Image
               src="/logo.svg"
               alt="sabrina_pic"
-              width={55}
-              height={55}
+              width={50}
+              height={50}
               className={"mb-4"}
             />
           </span>
@@ -62,7 +62,7 @@ export default function Header() {
               "absolute flex justify-center items-center z-0 mt-[100px] ml-[200px] opacity-5 max-sm:invisible"
             }
           />
-{/*           <Image
+          {/*           <Image
             src="/landing_page_photo.png"
             alt="sabrina_pic"
             width={450}
@@ -91,7 +91,7 @@ export default function Header() {
             <p>20    </p>            
             <p>21    </p>            
           </pre>
-          <div data-aos="fade-right" className="flex flex-row absolute mt-[280px] max-sm:mt-[300px] ml-[1300px] max-sm:ml-[290px]">
+          <div data-aos="fade-right" className="flex flex-row float-right mt-[280px] max-sm:mt-[300px] mr-52 max-sm:ml-[290px]">
             <a href="https://www.linkedin.com/in/sabrinadelvalle/"><Image
               src="/in.png"
               alt="linkedin_profile"
@@ -123,15 +123,17 @@ export default function Header() {
             "absolute flex justify-center items-center z-0 mt-[550px] ml-[1275px] animate-bounce w-12 h-12 max-sm:mt-[475px] max-sm:ml-[335px]"
           }
         />
-        <div className="absolute text-[90px] max-sm:text-[40px] ml-[750px] mt-[160px] max-sm:mt-[175px] z-0 max-sm:ml-[80px]">
-          <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-8 max-sm:mt-7 -ml-9"></span>
-          <span className="absolute w-[365px] max-sm:w-[165px] h-[100px] max-sm:h-[45px] bg-white mt-5 ml-5"></span>
+        <div className="text-[90px] max-lg:text-7xl max-sm:text-[35px] max-lg:mt-48 float-right max-sm:float-none -mr-20 mt-40 z-0 max-sm:mt-[-15px] max-sm:ml-[110px]">
+          <div>
+            <span className="absolute w-[365px] max-lg:w-[285px] max-lg:h-16 max-lg:mt-3 max-sm:w-[145px] h-[100px] max-sm:h-[40px] bg-white mt-8 max-sm:mt-[267px] -ml-9"></span>
+            <span className="absolute w-[365px] max-lg:w-[285px] max-lg:h-16 max-lg:mt-0.5 max-sm:w-[145px] h-[100px] max-sm:h-[40px] bg-white mt-5 ml-5 max-sm:mt-[260px]"></span>
+          </div>
           <span className="flex">
-            <p className="mr-7 max-sm:my-[15px] text-zinc-700 z-10 under animate-wiggle">SABRINA</p>
-            <p className="font-bold text-white max-sm:my-[15px]">WEB</p>
+            <p className="mr-7 max-sm:my-[-35px] text-zinc-700 z-10 under animate-wiggle">SABRINA</p>
+            <p className="font-bold text-white max-sm:my-[-35px]">WEB</p>
           </span>
           <span>
-            <p className="text-white max-sm:my-[-20px]">DEVELOPER</p>
+            <p className="text-white max-sm:mt-1">DEVELOPER</p>
           </span>
         </div>
       </div>
