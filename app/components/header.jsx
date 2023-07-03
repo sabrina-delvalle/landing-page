@@ -13,17 +13,17 @@ export default function Header() {
 
   return (
     <div className="h-[800px] max-sm:w-full max-md:w-full min-lg:w-full min-xl:w-full relative min-h-screen overflow-hidden max-sm:overflow-hidden">
-      <header className="relative flex justify-center bg-neutral-700 w-full h-20">
-        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-3 max-sm:p-4 max-md:gap-12 max-md:p-10 p-6 px-20 text-white w-4/5">
+      <header className="relative flex justify-center items-center bg-neutral-700 w-full h-20">
+        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-6 max-sm:p-0 max-md:gap-12 max-lg:gap-24 max-xl:gap-32 max-md:p-0 max-lg:p-0 max-xl:p-0 p-6 px-20 text-white w-4/5">
           <a
             href="/"
-            className="text-base max-sm:text-sm  hover:scale-125 easi-in duration-300"
+            className="text-base max-sm:text-sm max-[360px]:text-[11px]  hover:scale-125 easi-in duration-300"
           >
             about
           </a>
           <a
             href="/"
-            className="text-base max-sm:text-sm hover:scale-125 easi-in duration-300"
+            className="text-base max-sm:text-sm max-[360px]:text-[11px] hover:scale-125 easi-in duration-300"
           >
             projects
           </a>
@@ -33,18 +33,18 @@ export default function Header() {
               alt="sabrina_pic"
               width={50}
               height={50}
-              className={"mb-4"}
+              className={"mb-2"}
             />
           </span>
           <a
             href="/"
-            className="text-base max-sm:text-sm hover:scale-125 easi-in duration-300"
+            className="text-base max-sm:text-sm max-[360px]:text-[11px] hover:scale-125 easi-in duration-300"
           >
             stack
           </a>
           <a
             href="/"
-            className="text-base max-sm:text-sm hover:scale-125 easi-in duration-300"
+            className="text-base max-sm:text-sm max-[360px]:text-[11px] hover:scale-125 easi-in duration-300"
           >
             contact
           </a>
