@@ -12,7 +12,7 @@ export default function Main() {
   })
 
   return (
-    <div className="w-full h-auto pt-24 mt-[-135px] bg-neutral-400 max-sm:mt-[-235px] max-md:mt-[-300px] max-lg:mt-[-135px] max-sm:overflow-hidden overflow-hidden">
+    <div className="w-full h-auto pt-24 mt-[-20px] max-2xl:mt-[-135px] bg-neutral-400 max-sm:mt-[-235px] max-md:mt-[-135px] max-sm:overflow-hidden overflow-hidden">
       
       {/* Scroll Effect */}
       <h1 data-aos="fade-left" className="text-white text-7xl text-center m-28 max-sm:m-10 mt-[-50px] max-sm:mt-[-50px] max-sm:text-4xl ">
@@ -37,7 +37,7 @@ export default function Main() {
             width={90}
             height={90}
             className={
-              "z-10 opacity-95 mr-36 max-sm:mr-[-13px] max-sm:mt-[13px] mb-16 max-sm:mb-0 hover:cursor-pointer hover:scale-125 easi-in duration-300 max-sm:p-2"
+              "z-10 opacity-95 mr-36 max-sm:mr-[-13px] max-sm:mt-[13px] mb-16 max-sm:mb-0 hover:cursor-pointer hover:scale-125 easi-in duration-300 max-sm:p-2  max-lg:p-1"
             }
           />
           <Image
@@ -57,7 +57,7 @@ export default function Main() {
             width={200}
             height={200}
             className={
-              "z-10 opacity-95 mr-24 hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 mr-24 hover:cursor-pointer hover:scale-125 easi-in duration-300 max-sm:mr-16 max-md:-mr-3 /* max-lg:-mr-3 */ max-lg:-ml-10 max-md:-ml-10"
             }
           />
           <Image
@@ -66,7 +66,7 @@ export default function Main() {
             width={200}
             height={200}
             className={
-              "z-10 opacity-95 ml-8 max-sm:ml-[-85px] max-sm:mt-[30px] max-sm:mr-0 mr-44 hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 ml-8 max-sm:ml-[-85px] max-sm:mt-[30px] max-sm:mr-0 mr-44 hover:cursor-pointer hover:scale-125 easi-in duration-300  max-lg:-mr-3"
             }
           />
           <Image
@@ -75,18 +75,18 @@ export default function Main() {
             width={220}
             height={220}
             className={
-              "z-10 opacity-95 max-sm:ml-[-65px] hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 max-sm:ml-[-65px] hover:cursor-pointer hover:scale-125 easi-in duration-300  max-lg:ml-9"
             }
           />
         </div>
-        <div data-aos="fade-left" className="flex flex-row items-center justify-center pt-16 ml-20 max-sm:flex-col">
+        <div data-aos="fade-left" className="flex flex-row items-center justify-center pt-16 max-sm:pt-16 ml-20 gap-[-30px] max-sm:flex-col">
           <Image
             src="/nodej.png"
             alt="nodejs_profile"
             width={130}
             height={130}
             className={
-              "z-10 opacity-95 mr-24 max-sm:mr-[75px] hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 mr-24 max-sm:mr-[75px] max-sm:pb-3 hover:cursor-pointer hover:scale-125 easi-in duration-300"
             }
           />
           <Image
@@ -95,7 +95,7 @@ export default function Main() {
             width={100}
             height={100}
             className={
-              "z-10 opacity-95 max-sm:mr-[85px] max-sm:mt-[10px] ml-4 mr-16 mt-20 hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 max-sm:mr-[85px] max-sm:mt-[10px] ml-4 mr-16 mt-20 hover:cursor-pointer hover:scale-125 easi-in duration-300 max-[710px]:ml-3 max-sm:pb-3"
             }
           />
           <Image
@@ -104,7 +104,7 @@ export default function Main() {
             width={220}
             height={220}
             className={
-              "z-10 opacity-95 ml-6 max-sm:mr-[85px] max-sm:mt-[10px] hover:cursor-pointer hover:scale-125 easi-in duration-300"
+              "z-10 opacity-95 ml-6 max-sm:mr-[85px] max-sm:mt-[10px] hover:cursor-pointer hover:scale-125 easi-in duration-300 max-md:mr-9"
             }
           />
         </div>

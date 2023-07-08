@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <div className="h-[800px] max-sm:w-full relative min-h-screen overflow-hidden max-sm:overflow-hidden">
       <header className="relative flex justify-center bg-neutral-700 w-full h-20">
-        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-5 max-lg:gap-20  max-xl:gap-32 max-xl:px-1 max-lg:px-1 max-sm:p-1 max-sm:px-0 p-6 px-20 text-white w-4/5">
+        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-10 max-[450px]:gap-5 max-md:gap-10 max-lg:gap-20  max-xl:gap-32 max-xl:px-1 max-lg:px-1 max-sm:p-0.5 max-sm:px-0 p-6 px-20 text-white w-4/5">
           <a
             href="/"
             className="text-base max-sm:text-sm  hover:scale-125 easi-in duration-300"
@@ -91,47 +91,49 @@ export default function Header() {
             <p>20    </p>            
             <p>21    </p>            
           </pre>
-          <div data-aos="fade-right" className="flex flex-row absolute mt-[280px] max-sm:mt-[300px] ml-[1300px] max-sm:ml-[280px] max-[340px]:ml-[220px] max-lg:ml-[715px]  max-xl:ml-[955px] max-[1400px]:ml-[1165px]">
-            <a href="https://www.linkedin.com/in/sabrinadelvalle/"><Image
-              src="/in.png"
-              alt="linkedin_profile"
-              width={39}
-              height={35}
-              className={
-                "z-10 hover:cursor-pointer hover:scale-125 easi-in duration-300"
-              }
-            /></a>
-            <a href="https://github.com/sabrina-delvalle">
-            <Image
-              src="/github.png"
-              alt="github_profile"
-              width={22}
-              height={22}
-              className={
-                "z-10 hover:cursor-pointer hover:scale-125 easi-in duration-300"
-              }
-            /></a>
-          </div>
         </div>
         {/* <div className=" w-[480px] h-[240px] bg-rose-800 absolute mt-[285px] ml-[220px] z-0 rounded-tl-full rounded-tr-full scale-x-110"></div> */}
-        <Image
-          src="/arrow.svg"
-          alt="arrow_section"
-          width={100}
-          height={100}
-          className={
-            "absolute flex justify-center items-center z-0 mt-[550px] ml-[1275px] animate-bounce w-12 h-12 max-sm:mt-[475px] max-sm:ml-[300px] max-[320px]:ml-[250px]"
-          }
-        />
-        <div className="absolute text-[90px] max-sm:text-[36px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-sm:ml-[80px] max-lg:ml-[180px] max-xl:ml-[450px] max-[1400px]:ml-[655px]">
-          <span className="absolute w-[365px] max-sm:w-[155px] h-[100px] max-sm:h-[45px] bg-white mt-8 max-sm:mt-7 -ml-9"></span>
-          <span className="absolute w-[365px] max-sm:w-[155px] h-[100px] max-sm:h-[45px] bg-white mt-5 ml-5"></span>
+        <div className="absolute text-[90px] max-sm:text-[36px] max-md:text-[60px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-[380px]:ml-[80px] max-[460px]:ml-[115px] max-[412px]:ml-[105px] max-[384px]:ml-[85px] max-[550px]:ml-[160px] max-sm:ml-[230px] max-lg:ml-[440px] max-[900px]:ml-[180px] max-[920px]:ml-[360px] max-[1080px]:ml-[450px] max-xl:ml-[600px] max-[1060px]:ml-[425px] max-[960px]:ml-[400px] max-[1400px]:ml-[655px] max-[412px]:ml-[120px] max-lg:text-[75px]">
+          <span className="absolute w-[365px] max-sm:w-[150px] max-md:w-[230px] max-lg:mt-5 max-lg:w-[300px] max-md:h-[70px] max-md:mt-5 h-[100px] max-sm:h-[45px] bg-white mt-8 max-sm:mt-7 -ml-9"></span>
+          <span className="absolute w-[365px] max-sm:w-[150px] max-md:w-[230px] max-lg:w-[300px] max-lg:mt-2 max-md:h-[70px]  max-md:mt-3 max-md:ml-6 h-[100px] max-sm:h-[45px] max-sm:mt-5 bg-white mt-5 ml-5"></span>
           <span className="flex">
             <p className="mr-7 max-sm:my-[16px] text-zinc-700 z-10 under animate-wiggle">SABRINA</p>
             <p className="font-bold text-white max-sm:my-[15px] max-[340px]:text-[28px] max-[340px]:mt-[23px] max-sm:mx-[7px]">WEB</p>
           </span>
           <span>
-            <p className="text-white max-sm:my-[-20px]">DEVELOPER</p>
+            <div className="flex flex-row">
+              <p className="text-white max-sm:my-[-20px]">DEVELOPER</p>
+              <div data-aos="fade-right" className="flex flex-row max-sm:mt-4 max-sm:ml-0 max-md:ml-6 max-md:-mt-3 -mt-4 ml-14">
+              <a href="https://www.linkedin.com/in/sabrinadelvalle/"><Image
+                src="/in.png"
+                alt="linkedin_profile"
+                width={39}
+                height={35}
+                className={
+                  "z-10 hover:cursor-pointer hover:scale-125 easi-in duration-300"
+                }
+              /></a>
+              <a href="https://github.com/sabrina-delvalle">
+              <Image
+                src="/github.png"
+                alt="github_profile"
+                width={22}
+                height={22}
+                className={
+                  "z-10 hover:cursor-pointer hover:scale-125 easi-in duration-300"
+                }
+              /></a>
+              </div>
+            </div>
+            <Image
+              src="/arrow.svg"
+              alt="arrow_section"
+              width={100}
+              height={100}
+              className={
+                "absolute flex justify-center items-center z-0 animate-bounce w-12 h-12 mt-[150px] ml-[450px] float-right max-lg:invisible"
+              }
+            />
           </span>
         </div>
       </div>
