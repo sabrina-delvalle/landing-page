@@ -12,10 +12,10 @@ export default function Main() {
   })
 
   return (
-    <div className="w-full h-auto pt-24 mt-[-20px] max-2xl:mt-[-135px] bg-neutral-400 max-sm:mt-[-235px] max-md:mt-[-135px] max-sm:overflow-hidden overflow-hidden">
+    <div className="w-full h-auto bg-neutral-400 max-sm:overflow-hidden overflow-hidden">
       
       {/* Scroll Effect */}
-      <h1 data-aos="fade-left" className="text-white text-7xl text-center m-28 max-sm:m-10 mt-[-50px] max-sm:mt-[-50px] max-sm:text-4xl ">
+      <h1 data-aos="fade-left" className="text-white text-7xl max-sm:text-5xl text-center my-20">
         Stack
       </h1>
       {/* Scroll Effect */}
@@ -75,7 +75,7 @@ export default function Main() {
             width={220}
             height={220}
             className={
-              "z-10 opacity-95 max-sm:ml-[-65px] hover:cursor-pointer hover:scale-125 easi-in duration-300  max-lg:ml-9"
+              "z-10 opacity-95 max-sm:ml-[-65px] hover:cursor-pointer hover:scale-125 easi-in duration-300 max-lg:ml-9"
             }
           />
         </div>

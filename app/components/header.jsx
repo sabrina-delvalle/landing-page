@@ -12,7 +12,7 @@ export default function Header() {
   })
 
   return (
-    <div className="h-[800px] max-sm:w-full relative min-h-screen overflow-hidden max-sm:overflow-hidden">
+    <div className="h-auto max-sm:w-full relative overflow-hidden max-sm:overflow-hidden">
       <header className="relative flex justify-center bg-neutral-700 w-full h-20">
         <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-10 max-[450px]:gap-5 max-md:gap-10 max-lg:gap-20  max-xl:gap-32 max-xl:px-1 max-lg:px-1 max-sm:p-0.5 max-sm:px-0 p-6 px-20 text-white w-4/5">
           <a
@@ -93,7 +93,7 @@ export default function Header() {
           </pre>
         </div>
         {/* <div className=" w-[480px] h-[240px] bg-rose-800 absolute mt-[285px] ml-[220px] z-0 rounded-tl-full rounded-tr-full scale-x-110"></div> */}
-        <div className="absolute text-[90px] max-sm:text-[36px] max-md:text-[60px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-[380px]:ml-[80px] max-[460px]:ml-[115px] max-[412px]:ml-[105px] max-[384px]:ml-[85px] max-[550px]:ml-[160px] max-sm:ml-[230px] max-lg:ml-[440px] max-[900px]:ml-[180px] max-[920px]:ml-[360px] max-[1080px]:ml-[450px] max-xl:ml-[600px] max-[1060px]:ml-[425px] max-[960px]:ml-[400px] max-[1400px]:ml-[655px] max-[412px]:ml-[120px] max-lg:text-[75px]">
+        <div className="absolute text-[90px] max-sm:text-[36px] max-md:text-[60px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-[380px]:ml-[80px] max-[460px]:ml-[115px] max-[412px]:ml-[105px] max-[384px]:ml-[85px] max-[550px]:ml-[160px] max-sm:ml-[230px] max-lg:ml-[440px] max-[900px]:ml-[180px] max-[920px]:ml-[360px] max-[1080px]:ml-[450px] max-xl:ml-[600px] max-[1060px]:ml-[425px] max-[960px]:ml-[400px] max-[1400px]:ml-[655px] max-lg:text-[75px]">
           <span className="absolute w-[365px] max-sm:w-[150px] max-md:w-[230px] max-lg:mt-5 max-lg:w-[300px] max-md:h-[70px] max-md:mt-5 h-[100px] max-sm:h-[45px] bg-white mt-8 max-sm:mt-7 -ml-9"></span>
           <span className="absolute w-[365px] max-sm:w-[150px] max-md:w-[230px] max-lg:w-[300px] max-lg:mt-2 max-md:h-[70px]  max-md:mt-3 max-md:ml-6 h-[100px] max-sm:h-[45px] max-sm:mt-5 bg-white mt-5 ml-5"></span>
           <span className="flex">
