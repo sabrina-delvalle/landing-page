@@ -1,11 +1,22 @@
 "use client"
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css"
 
 export default function Main() {
+
+/*   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage ] = useState(""); */
+
+  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
 
   useEffect(() => {
     Aos.init({ duration: 2000, mirror: true })
@@ -109,8 +120,18 @@ export default function Main() {
           />
         </div>
       </section>
-      <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex items-center justify-center overflow-hidden">
-        <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">About</h1>
+      <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex flex-col items-center justify-center overflow-hidden">
+        <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-5xl pb-10">Contact Me!</h1>
+        <form className="flex flex-col items-center justify-center gap-4">
+          <input type="text" id="fname" name="fname" placeholder="Name" onChange={e => setFormData({...formData, name: e.target.value})}  value={formData.name} />
+          <input type="email" id="userEmail" name="userEmail" placeholder="Email" value={formData.email} />
+          <textarea rows="3" cols="50" id="fmessage" name="fmessage" placeholder="Message" value={formData.message} />
+          <input
+            type="submit"
+            value="Submit"
+            className="w-20 h-10 bg-slate-700 text-white"
+          />
+        </form>
       </section>
       <section  data-aos="fade-left" className="h-[800px] w-full bg-pink-500 flex items-center justify-center">
         <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">Projects</h1>
