@@ -4,6 +4,9 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import axios from "axios";
+
+axios.defaults.withCredentials = true;
 
 export default function Main() {
 
@@ -19,8 +22,36 @@ export default function Main() {
   })
 
   useEffect(() => {
-    Aos.init({ duration: 2000, mirror: true })
-  })
+    Aos.init({ duration: 2000, mirror: true });
+    console.log(formData);
+  }, [formData])
+
+  const sendForm = (event) => {
+    event.preventDefault();
+
+/*     const formDataContact = new FormData();
+    formDataContact.append("name", formData.name);
+    formDataContact.append("email", formData.email);
+    formDataContact.append("messsage", formData.message); */
+
+    const postContact = async () => {
+      try {
+        const awaitRegister = await axios.post(`http://localhost:5000/api/v1/contact`, formData,
+          {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            Accept: "application/json",
+          }})
+          .then((response) => console.log(response.data))
+          .catch((err) => console.log(err));
+        console.log(awaitRegister);
+        //this.props.navigate("/");
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    postContact();
+  }
 
   return (
     <div className="w-full h-auto bg-neutral-400 max-sm:overflow-hidden overflow-hidden">
@@ -122,10 +153,10 @@ export default function Main() {
       </section>
       <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex flex-col items-center justify-center overflow-hidden">
         <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-5xl pb-10">Contact Me!</h1>
-        <form className="flex flex-col items-center justify-center gap-4">
-          <input type="text" id="fname" name="fname" placeholder="Name" onChange={e => setFormData({...formData, name: e.target.value})}  value={formData.name} />
-          <input type="email" id="userEmail" name="userEmail" placeholder="Email" value={formData.email} />
-          <textarea rows="3" cols="50" id="fmessage" name="fmessage" placeholder="Message" value={formData.message} />
+        <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
+          <input type="text" id="fname" name="fname" placeholder="Name" onChange={e => {setFormData({...formData, name: e.target.value})}}  defaultValue={formData.name} />
+          <input type="email" id="userEmail" name="userEmail" placeholder="Email" onChange={e => {setFormData({...formData, email: e.target.value})}} defaultValue={formData.email} />
+          <textarea rows="3" cols="50" id="fmessage" name="fmessage" placeholder="Message" onChange={e => {setFormData({...formData, message: e.target.value})}} defaultValue={formData.message} />
           <input
             type="submit"
             value="Submit"
