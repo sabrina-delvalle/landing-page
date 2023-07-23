@@ -1,5 +1,9 @@
 {
-  "extends": ["eslint:recommended", "next"]
+  "extends": ["eslint:recommended", "next"],
+  "rules": {
+    // Other rules
+    "@next/next/no-html-link-for-pages": "off"
+  }
 }
 
 /* {
