@@ -1,8 +1,12 @@
 {
+  "extends": ["eslint:recommended", "next"]
+}
+
+/* {
   "rules": {
     "@next/next/no-html-link-for-pages": ["error", "packages/my-app/pages/"]
   }
-}
+} */
 
 /* {
   "extends": "next/core-web-vitals"
