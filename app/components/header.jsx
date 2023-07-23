@@ -69,7 +69,7 @@ export default function Header() {
             height={100}
             className={"absolute z-10 p-12 py-44 ml-20 mt-[-20px]"}
           /> */}
-          <pre className="absolute mt-[350px] ml-[50px] max-sm:invisible text-white opacity-10 font-mono text-xs">
+          {/* <pre className="absolute mt-[350px] ml-[50px] max-sm:invisible text-white opacity-10 font-mono text-xs">
             <p>1    <span className="text-pink-200">import React from "react";</span></p>
             <p>2    <span className="text-pink-200">import Image from "next/image";</span></p>
             <p>4    <span className="text-pink-200">export default function <span className="text-blue-300">Main() &#123;</span></span></p>
@@ -90,7 +90,7 @@ export default function Header() {
             <p>19    <span className="text-blue-200">              "z-10 opacity-95 mr-40 hover:cursor-pointer   </span></p>            
             <p>20    </p>            
             <p>21    </p>            
-          </pre>
+          </pre> */}
         </div>
         {/* <div className=" w-[480px] h-[240px] bg-rose-800 absolute mt-[285px] ml-[220px] z-0 rounded-tl-full rounded-tr-full scale-x-110"></div> */}
         <div className="absolute text-[90px] max-sm:text-[36px] max-md:text-[60px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-[380px]:ml-[80px] max-[460px]:ml-[115px] max-[412px]:ml-[105px] max-[384px]:ml-[85px] max-[550px]:ml-[160px] max-sm:ml-[230px] max-lg:ml-[440px] max-[900px]:ml-[180px] max-[920px]:ml-[360px] max-[1080px]:ml-[450px] max-xl:ml-[600px] max-[1060px]:ml-[425px] max-[960px]:ml-[400px] max-[1400px]:ml-[655px] max-lg:text-[75px]">
