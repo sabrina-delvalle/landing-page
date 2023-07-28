@@ -36,7 +36,7 @@ export default function Main() {
 
     const postContact = async () => {
       try {
-        const awaitRegister = await axios.post(`http://localhost:5000/api/v1/contact`, formData,
+        const awaitRegister = await axios.post(`${process.env.NEXT_PUBLIC_DB_API}/api/v1/contact`, formData,
           {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -154,9 +154,15 @@ export default function Main() {
       <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-500 flex flex-col items-center justify-center overflow-hidden">
         <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-5xl pb-10">Contact Me!</h1>
         <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
-          <input type="text" id="fname" name="fname" placeholder="Name" onChange={e => {setFormData({...formData, name: e.target.value})}}  defaultValue={formData.name} />
-          <input type="email" id="userEmail" name="userEmail" placeholder="Email" onChange={e => {setFormData({...formData, email: e.target.value})}} defaultValue={formData.email} />
-          <textarea rows="3" cols="50" id="fmessage" name="fmessage" placeholder="Message" onChange={e => {setFormData({...formData, message: e.target.value})}} defaultValue={formData.message} />
+
+          <input type="text" id="fname" name="fname" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
+	        setFormData({...formData, name: targetName}) }}  value={ formData.name } />
+
+          <input type="email" id="userEmail" name="userEmail" placeholder="Email" onChange={e => {setFormData({...formData, email: e.target.value})}} />
+
+          <textarea rows="3" cols="50" id="fmessage" name="fmessage" placeholder="Message" onChange={e => { const targetMessage =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
+	        setFormData({...formData, message: targetMessage}) }} value={ formData.message }  />
+          
           <input
             type="submit"
             value="Submit"
