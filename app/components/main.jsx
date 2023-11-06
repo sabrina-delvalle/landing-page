@@ -172,6 +172,7 @@ export default function Main() {
       </section>
       <section  data-aos="fade-left" className="h-[800px] w-full bg-pink-500 flex items-center justify-center">
         <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">Projects</h1>
+        <a href='https://dreamblog.onrender.com/'>https://dreamblog.onrender.com/</a>
       </section>
       <footer data-aos="fade-right" className="h-[800px] w-full bg-gray-800 flex items-center justify-center">
         <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">Footer</h1>
