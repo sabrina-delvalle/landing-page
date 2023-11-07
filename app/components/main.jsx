@@ -159,13 +159,11 @@ export default function Main() {
         <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-5xl pb-10">Contact Me!</h1>
         <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
 
-          <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
-	        setFormData({...formData, name: targetName}) }}  value={ formData.name } />
+          <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, name: targetName}) }} value={ formData.name } />
 
           <input type="email" id="userEmail" name="userEmail" className="p-1 rounded-lg text-center text-gray-500 w-3/5" placeholder="Email Address" onChange={e => {setFormData({...formData, email: e.target.value})}} />
 
-          <textarea rows="3" cols="50" id="fmessage" name="fmessage" className="flex p-2 rounded-lg text-gray-500 w-3/3" placeholder="Message" onChange={e => { const targetMessage =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
-	        setFormData({...formData, message: targetMessage}) }} value={ formData.message }  />
+          <textarea rows="3" cols="50" id="fmessage" name="fmessage" className="flex p-2 rounded-lg text-gray-500 w-3/3" placeholder="Message" onChange={e => { const targetMessage =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, message: targetMessage}) }} value={ formData.message }  />
           
           <input
             type="submit"
