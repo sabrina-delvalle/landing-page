@@ -51,7 +51,7 @@ export default function Header() {
         </nav>
       </header>
 
-      <div className="bg-city-bg w-full max-sm:w-full h-[700px] max-sm:h-[600px] bg-center bg-cover">
+      <div className="bg-city-bg w-full max-sm:w-full h-screen max-sm:h-[600px] bg-center bg-cover">
         <div>
           <Image
             src="/gray_logo.svg"
@@ -59,7 +59,7 @@ export default function Header() {
             width={700}
             height={700}
             className={
-              "absolute flex justify-center items-center z-0 mt-[100px] ml-[375px] opacity-5 max-sm:invisible 2xl:ml-[550px] lg:ml-[350px]"
+              "absolute flex justify-center items-center z-0 mt-[100px] ml-[375px] opacity-5 max-sm:invisible 2xl:ml-[560px] lg:ml-[350px] 2xl:mt-[165px]"
             }
           />
 {/*           <Image
@@ -93,7 +93,7 @@ export default function Header() {
           </pre>
         </div>
         {/* <div className=" w-[480px] h-[240px] bg-rose-800 absolute mt-[285px] ml-[220px] z-0 rounded-tl-full rounded-tr-full scale-x-110"></div> */}
-        <div className="absolute text-[90px] max-sm:text-[36px] max-md:text-[60px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-[380px]:ml-[80px] max-[460px]:ml-[115px] max-[412px]:ml-[105px] max-[384px]:ml-[85px] max-[550px]:ml-[160px] max-sm:ml-[230px] max-lg:ml-[440px] max-[900px]:ml-[180px] max-[920px]:ml-[360px] max-[1080px]:ml-[450px] max-xl:ml-[600px] max-[1060px]:ml-[425px] max-[960px]:ml-[400px] max-[1400px]:ml-[655px] max-lg:text-[75px] 2xl:ml-[1150px] ">
+        <div className="absolute text-[90px] max-sm:text-[36px] max-md:text-[60px] ml-[750px] max-[340px]:ml-[60px] mt-[160px] max-sm:mt-[175px] z-0 max-[380px]:ml-[80px] max-[460px]:ml-[115px] max-[412px]:ml-[105px] max-[384px]:ml-[85px] max-[550px]:ml-[160px] max-sm:ml-[230px] max-lg:ml-[440px] max-[900px]:ml-[180px] max-[920px]:ml-[360px] max-[1080px]:ml-[450px] max-xl:ml-[600px] max-[1060px]:ml-[425px] max-[960px]:ml-[400px] max-[1400px]:ml-[655px] max-lg:text-[75px] 2xl:ml-[1150px] 2xl:mt-[240px]">
           <span className="absolute w-[365px] max-sm:w-[150px] max-md:w-[230px] max-lg:mt-5 max-lg:w-[300px] max-md:h-[70px] max-md:mt-5 h-[100px] max-sm:h-[45px] bg-white mt-8 max-sm:mt-7 -ml-9"></span>
           <span className="absolute w-[365px] max-sm:w-[150px] max-md:w-[230px] max-lg:w-[300px] max-lg:mt-2 max-md:h-[70px]  max-md:mt-3 max-md:ml-6 h-[100px] max-sm:h-[45px] max-sm:mt-5 bg-white mt-5 ml-5"></span>
           <span className="flex">
