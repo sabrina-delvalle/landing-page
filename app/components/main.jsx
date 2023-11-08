@@ -53,16 +53,14 @@ export default function Main() {
             email: "",
             message: ""
           })
-          setIsDone(true);
+          setIsDone(true)
           setResponse(false)
         //this.props.navigate("/");
       } catch (err) {
         console.log(err);
       }
     }
-    if(Object.values(formData).every(elem => elem !== '')){
-      postContact();
-    }
+    postContact();
   }
 
   return (
