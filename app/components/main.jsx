@@ -161,11 +161,11 @@ export default function Main() {
           />
         </div>
       </section>
-      <section  data-aos="fade-left" className="h-[800px] w-full bg-neutral-700 flex items-center justify-center flex-col">
+      <section  data-aos="fade-left" className="h-screen w-full bg-neutral-700 flex items-center justify-center flex-col">
         <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">Projects</h1>
         <a href="https://dreamblog.onrender.com/"><h3 className="text-2xl ml-4 text-pink-400 max-sm:text-1xl p-20">Blog Project Link <p className="text-white text-4xl max-sm:text-2xl p-10 hover:text-pink-500"> 🔗 dreamblog.onrender.com</p></h3></a>
       </section>
-      <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-600 flex flex-col items-center justify-center overflow-hidden">
+      <section data-aos="fade-right" className="h-screen w-full bg-neutral-600 flex flex-col items-center justify-center overflow-hidden">
         <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-3xl pb-10">Contact Me!</h1>
         <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
           <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, name: targetName}) }} value={ formData.name } />
@@ -192,7 +192,7 @@ export default function Main() {
             />)}
           </form>
       </section>
-      <footer data-aos="fade-right" className="h-[800px] w-full bg-neutral-800 flex items-center justify-center">
+      <footer data-aos="fade-right" className="h-screen w-full bg-neutral-800 flex items-center justify-center">
         <div className="flex flex-col align-middle items-center text-white float-left text-4xl">
           <p className="p-10 max-sm:text-2xl"> Sabrina del Valle</p>
           <p className="text-xs">Web Developer - Caracas, Ven. 1020</p>
