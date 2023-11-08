@@ -1,11 +1,10 @@
 "use client"
 
-import React, { useEffect, useState, Suspense } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import axios from "axios";
-import Loading from "./loading";
 
 axios.defaults.withCredentials = true;
 
@@ -21,12 +20,16 @@ export default function Main() {
     message: ""
   })
 
+  const [response, setResponse] = useState(false)
+  const [isDone, setIsDone] = useState(false)
+
   useEffect(() => {
     Aos.init({ duration: 2000, mirror: true });
     console.log(formData);
   }, [formData])
 
   const sendForm = (event) => {
+    setResponse(true);
     event.preventDefault();
 
 /*     const formDataContact = new FormData();
@@ -50,6 +53,8 @@ export default function Main() {
             email: "",
             message: ""
           })
+          setIsDone(true);
+          setResponse(false)
         //this.props.navigate("/");
       } catch (err) {
         console.log(err);
@@ -57,8 +62,6 @@ export default function Main() {
     }
     if(Object.values(formData).every(elem => elem !== '')){
       postContact();
-    }else{
-      
     }
   }
 
@@ -166,22 +169,30 @@ export default function Main() {
       </section>
       <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-600 flex flex-col items-center justify-center overflow-hidden">
         <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-3xl pb-10">Contact Me!</h1>
-        <Suspense fallback={ <Loading /> }>
         <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
-
           <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, name: targetName}) }} value={ formData.name } />
-
           <input type="email" id="userEmail" name="userEmail" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Email" onChange={e => {setFormData({...formData, email: e.target.value})}} value={ formData.email }/>
-
           <textarea rows="3" cols="50" id="fmessage" name="fmessage" className="flex p-2 rounded-lg text-gray-500 max-sm:w-2/3 w-3/3" placeholder="Message" onChange={e => { const targetMessage =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, message: targetMessage}) }} value={ formData.message }  />
-          
-            <input
+            { Object.values(formData).every(elem => elem !== '') ? 
+              (response ? <input
+                type="submit"
+                value="Submit"
+                className="w-20 h-10 bg-neutral-800 text-white p-1 rounded-lg hover:bg-neutral-700 cursor-wait"
+              />  : <input
               type="submit"
               value="Submit"
               className="w-20 h-10 bg-neutral-800 text-white p-1 rounded-lg hover:bg-neutral-700 cursor-pointer"
-            />
+            /> )
+               : (isDone ? <input
+                type="submit"
+                value="Done"
+                className="w-20 h-10 bg-gray-100 text-gray-300 p-1 rounded-lg hover:bg-gray-100 cursor-none"
+              /> : <input
+              type="submit"
+              value="Fill Me"
+              className="w-20 h-10 bg-gray-100 text-gray-300 p-1 rounded-lg hover:bg-gray-100 cursor-none"
+            />)}
           </form>
-          </Suspense>
       </section>
       <footer data-aos="fade-right" className="h-[800px] w-full bg-neutral-800 flex items-center justify-center">
         <div className="flex flex-col align-middle items-center text-white float-left text-4xl">
