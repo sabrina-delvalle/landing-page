@@ -59,7 +59,7 @@ export default function Header() {
             width={700}
             height={700}
             className={
-              "absolute flex justify-center items-center z-0 mt-[100px] ml-[375px] opacity-5 max-sm:invisible"
+              "absolute flex justify-center items-center z-0 mt-[100px] ml-[375px] opacity-5 max-sm:invisible 2xl:ml-[550px] lg:ml-[350px]"
             }
           />
 {/*           <Image
