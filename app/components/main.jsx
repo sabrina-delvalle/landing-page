@@ -153,17 +153,17 @@ export default function Main() {
       </section>
       <section  data-aos="fade-left" className="h-[800px] w-full bg-neutral-700 flex items-center justify-center flex-col">
         <h1 data-aos="zoom-in" className="text-white text-9xl max-sm:text-5xl">Projects</h1>
-        <a href="https://dreamblog.onrender.com/"><h3 className="text-2xl text-pink-400 max-sm:text-1xl p-20">Blog Project Link <p className="text-white text-4xl max-sm:text-2xl p-10 hover:text-pink-500"> 🔗 dreamblog.onrender.com</p></h3></a>
+        <a href="https://dreamblog.onrender.com/"><h3 className="text-2xl ml-4 text-pink-400 max-sm:text-1xl p-20">Blog Project Link <p className="text-white text-4xl max-sm:text-2xl p-10 hover:text-pink-500"> 🔗 dreamblog.onrender.com</p></h3></a>
       </section>
       <section data-aos="fade-right" className="h-[800px] w-full bg-neutral-600 flex flex-col items-center justify-center overflow-hidden">
-        <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-5xl pb-10">Contact Me!</h1>
+        <h1 data-aos="zoom-in" className="text-white text-3xl max-sm:text-3xl pb-10">Contact Me!</h1>
         <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
 
-          <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, name: targetName}) }} value={ formData.name } />
+          <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, name: targetName}) }} value={ formData.name } />
 
-          <input type="email" id="userEmail" name="userEmail" className="p-1 rounded-lg text-center text-gray-500 w-3/5" placeholder="Email Address" onChange={e => {setFormData({...formData, email: e.target.value})}} />
+          <input type="email" id="userEmail" name="userEmail" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Email" onChange={e => {setFormData({...formData, email: e.target.value})}} />
 
-          <textarea rows="3" cols="50" id="fmessage" name="fmessage" className="flex p-2 rounded-lg text-gray-500 w-3/3" placeholder="Message" onChange={e => { const targetMessage =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, message: targetMessage}) }} value={ formData.message }  />
+          <textarea rows="3" cols="50" id="fmessage" name="fmessage" className="flex p-2 rounded-lg text-gray-500 max-sm:w-2/3 w-3/3" placeholder="Message" onChange={e => { const targetMessage =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, message: targetMessage}) }} value={ formData.message }  />
           
           <input
             type="submit"
@@ -174,7 +174,7 @@ export default function Main() {
       </section>
       <footer data-aos="fade-right" className="h-[800px] w-full bg-neutral-800 flex items-center justify-center">
         <div className="flex flex-col align-middle items-center text-white float-left text-4xl">
-          <p className="p-10"> Sabrina del Valle</p>
+          <p className="p-10 max-sm:text-2xl"> Sabrina del Valle</p>
           <p className="text-xs">Web Developer - Caracas, Ven. 1020</p>
           <p className="text-xs">is.sabrinadelvalle@gmail.com</p>
         </div>
