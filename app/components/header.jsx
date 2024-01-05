@@ -14,15 +14,15 @@ export default function Header() {
   return (
     <div className="h-auto max-sm:w-full relative overflow-hidden max-sm:overflow-hidden">
       <header className="relative flex justify-center bg-neutral-700 w-full h-20">
-        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-10 max-[450px]:gap-5 max-md:gap-10 max-lg:gap-20  max-xl:gap-32 max-xl:px-1 max-lg:px-1 max-sm:p-0.5 max-sm:px-0 p-6 px-20 text-white w-4/5">
+        <nav  data-aos="zoom-out" className="flex justify-center items-center gap-40 max-sm:gap-10 max-[450px]:gap-5 max-md:gap-10 max-lg:gap-20  max-xl:gap-32 max-xl:px-1 max-lg:px-1 max-sm:p-0.5 max-sm:px-0 p-6 px-10 text-white w-4/5">
           <a
             href="/"
             className="text-base max-sm:text-sm  hover:scale-125 easi-in duration-300"
           >
-            about
+            home
           </a>
           <a
-            href="/"
+            href="#projects"
             className="text-base max-sm:text-sm hover:scale-125 easi-in duration-300"
           >
             projects
@@ -37,13 +37,13 @@ export default function Header() {
             />
           </span>
           <a
-            href="/"
+            href="#stack"
             className="text-base max-sm:text-sm hover:scale-125 easi-in duration-300"
           >
             stack
           </a>
           <a
-            href="/"
+            href="#contact"
             className="text-base max-sm:text-sm hover:scale-125 easi-in duration-300"
           >
             contact
