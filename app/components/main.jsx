@@ -167,7 +167,7 @@ export default function Main() {
       <section id="projects" className="w-full bg-neutral-700 flex items-center justify-center flex-col p-20">
       <h1 data-aos="fade-left" className="text-white text-5xl font-light pt-20 pb-14 underline">Projects</h1>
               <a href="https://dreamblog.onrender.com/" target="_blank">
-        <div data-aos="fade-right" className="flex flex-col items-center gap-10 p-20 max-sm:p-0 bg-stone-800 hover:bg-stone-800/70 max-sm:bg-stone-700 m-10 max-sm:m-3 rounded-[5rem]">
+        <div data-aos="fade-right" className="flex flex-col items-center gap-10 p-20 max-sm:p-0 bg-stone-800 hover:bg-stone-800/70 max-sm:bg-stone-800 m-10 max-sm:m-3 rounded-[5rem]">
           <h1 data-aos="fade-right" className="flex items-center justify-center text-white text-5xl font-thin">Blog <svg className="w-8 h-8 mx-3 text-pink-500 dark:text-white" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
           </svg></h1>
@@ -183,7 +183,7 @@ export default function Main() {
         </div>
               </a>
               <a href="https://mystoreship.netlify.app/" target="_blank">
-        <div data-aos="fade-left" className="flex flex-col items-center gap-10 p-20 max-sm:p-0 bg-slate-800/90 hover:bg-slate-800/70 max-sm:bg-stone-700 hover:cursor-pointer hover:bg-slate-800 m-10 max-sm:m-3 rounded-[5rem]">
+        <div data-aos="fade-left" className="flex flex-col items-center gap-10 p-20 max-sm:p-0 bg-slate-800/90 hover:bg-slate-800/70 max-sm:bg-stone-800 hover:cursor-pointer hover:bg-slate-800 m-10 max-sm:m-3 rounded-[5rem]">
           <h1 data-aos="fade-left" className="flex items-center justify-center text-white text-5xl font-thin max-sm:text-white max-sm:mt-10">Store <svg className="w-8 h-8 mx-3 text-pink-600 dark:text-white" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
           </svg>
