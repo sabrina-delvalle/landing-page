@@ -164,11 +164,11 @@ export default function Main() {
         </section>
       </div>
       
-      <section id="projects" className="w-full bg-neutral-700 flex items-center justify-center flex-col p-20">
-      <h1 data-aos="fade-left" className="text-white text-5xl font-light pt-20 pb-14 underline">Projects</h1>
-              <a href="https://dreamblog.onrender.com/">
-        <div data-aos="fade-right" className="flex flex-col items-center gap-10 p-20 max-sm:p-0 bg-stone-800 hover:bg-stone-800/70 max-sm:bg-stone-800 m-10 max-sm:m-3 rounded-[5rem]">
-          <h1 data-aos="fade-right" className="flex items-center justify-center text-white text-5xl font-thin max-sm:mt-10">Blog <svg className="w-8 h-8 mx-3 text-pink-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
+      <section id="projects" className="w-full bg-neutral-700 flex items-center justify-center flex-col p-28 h-full">
+      <h1 data-aos="fade-top" className="text-white text-5xl font-light pt-16 pb-14 underline">Projects</h1>
+              <a href="https://dreamblogs.netlify.app/">
+        <div className="flex flex-col items-center gap-10 p-20 max-sm:p-0 border border-white shadow shadow-white bg-stone-800 max-sm:bg-stone-800 m-10 max-sm:m-3 rounded-[5rem]">
+          <h1 className="flex items-center justify-center text-white text-5xl font-thin max-sm:mt-10">Blog <svg className="w-8 h-8 mx-3 text-pink-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
           </svg></h1>
                 <Image
@@ -183,8 +183,8 @@ export default function Main() {
         </div>
               </a>
               <a href="https://mystoreship.netlify.app/">
-        <div data-aos="fade-left" className="flex flex-col items-center gap-10 p-20 max-sm:p-0 bg-slate-800/90 hover:bg-slate-800/70 max-sm:bg-stone-800 hover:cursor-pointer hover:bg-slate-800 m-10 max-sm:m-3 rounded-[5rem]">
-          <h1 data-aos="fade-left" className="flex items-center justify-center text-white text-5xl font-thin max-sm:text-white max-sm:mt-10">Store <svg className="w-8 h-8 mx-3 text-pink-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
+        <div className="flex flex-col items-center gap-10 p-20 max-sm:p-0 border border-white shadow shadow-white bg-slate-800/90 hover:bg-slate-800/70 max-sm:bg-stone-800 hover:cursor-pointer hover:bg-slate-800 m-10 max-sm:m-3 rounded-[5rem]">
+          <h1 className="flex items-center justify-center text-white text-5xl font-thin max-sm:text-white max-sm:mt-10">Store <svg className="w-8 h-8 mx-3 text-pink-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
           </svg>
           </h1>
@@ -199,13 +199,47 @@ export default function Main() {
                 />
         </div>
               </a>
+            <a href="https://3d-place.netlify.app/">
+        <div className="flex flex-col items-center gap-10 p-20 max-sm:p-0 border border-white shadow shadow-white bg-neutral-600/90 max-sm:bg-stone-800 hover:cursor-pointer m-10 max-sm:m-3 rounded-[5rem]">
+          <h1 className="flex items-center justify-center text-white text-5xl font-thin max-sm:text-white max-sm:mt-10">Store Layout<svg className="w-8 h-8 mx-3 text-pink-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
+          </svg>
+          </h1>
+                <Image
+                  src="/store2.png"
+                  alt="store"
+                  width={1000}
+                  height={1000}
+                  className={
+                    " border-sky-400/80 border-[1px] z-10 ml-6 max-sm:ml-6 max-sm:mr-[85px] max-sm:mt-[10px] hover:cursor-pointer max-md:mr-9 rounded-3xl hover:opacity-90 hover:border-sky-500 hover:border-[2px]"
+                  }
+                />
+        </div>
+              </a>
+              <a href="https://3d-place.netlify.app/">
+        <div className="flex flex-col items-center gap-10 p-20 max-sm:p-0 border border-white shadow shadow-white bg-gray-600/70 max-sm:bg-stone-800 hover:cursor-pointer m-10 max-sm:m-3 rounded-[5rem]">
+          <h1 className="flex items-center justify-center text-white text-5xl font-thin max-sm:text-white max-sm:mt-10">Workouts <svg className="w-8 h-8 mx-3 text-pink-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
+          </svg>
+          </h1>
+                <Image
+                  src="/workout.png"
+                  alt="store"
+                  width={1000}
+                  height={1000}
+                  className={
+                    " border-neutral-400/80 border-[1px] z-10 ml-6 max-sm:ml-6 max-sm:mr-[85px] max-sm:mt-[10px] hover:cursor-pointer max-md:mr-9 rounded-3xl hover:opacity-90 hover:border-neutral-500 hover:border-[2px]"
+                  }
+                />
+        </div>
+              </a>
 
         {/* <h1 data-aos="fade-left" className="text-white text-9xl max-sm:text-5xl">Projects</h1>
         <a data-aos="fade-right" href="https://dreamblog.onrender.com/"><h3 className="text-2xl ml-4 text-pink-400 max-sm:text-1xl p-20">Blog Project Link <p className="text-white text-4xl max-sm:text-2xl p-10 hover:text-pink-500"> 🔗 dreamblog.onrender.com</p></h3></a>
         <a data-aos="fade-left" href="https://mystoreship.netlify.app/"><h3 className="text-2xl ml-4 text-pink-400 max-sm:text-1xl p-20">Blog Project Link <p className="text-white text-4xl max-sm:text-2xl p-10 hover:text-pink-500"> 🔗 mystoreship.netlify.app/</p></h3></a> */}
       </section>
-      <section id="contact" data-aos="fade-right" className="h-screen w-full bg-neutral-600 flex flex-col items-center justify-center overflow-hidden">
-        <h1 data-aos="zoom-in" className=" text-3xl max-sm:text-3xl pb-10 text-pink-400">Contact Me!</h1>
+      <section id="contact" className="h-screen w-full bg-neutral-600 flex flex-col items-center justify-center overflow-hidden">
+        <h1 className=" text-3xl max-sm:text-3xl pb-10 text-pink-400">Contact Me!</h1>
         <form onSubmit={sendForm} action="/contact" className="flex flex-col items-center justify-center gap-4">
           <input type="text" id="fname" name="fname" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Name / Lastname" onChange={e => { const targetName =  e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1); setFormData({...formData, name: targetName}) }} value={ formData.name } />
           <input type="email" id="userEmail" name="userEmail" className="p-1 rounded-lg text-center text-gray-500 max-sm:w-2/3 w-3/5" placeholder="Email" onChange={e => {setFormData({...formData, email: e.target.value})}} value={ formData.email }/>
@@ -231,7 +265,7 @@ export default function Main() {
             />)}
           </form>
       </section>
-      <footer data-aos="fade-right" className="h-screen w-full bg-neutral-800 flex items-center justify-center">
+      <footer className="h-screen w-full bg-neutral-800 flex items-center justify-center">
         <div className="flex flex-col align-middle items-center text-white float-left text-4xl">
           <p className="p-10 max-sm:text-2xl"> Sabrina del Valle</p>
           <p className="text-xs">Web Developer - Caracas, Ven. 1020</p>
