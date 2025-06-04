@@ -216,7 +216,7 @@ export default function Main() {
                 />
         </div>
               </a>
-              <a href="https://3d-place.netlify.app/">
+              <a href="https://gym-workouts.onrender.com/">
         <div className="flex flex-col items-center gap-10 p-20 max-sm:p-0 border border-white shadow shadow-white bg-gray-600/70 max-sm:bg-stone-800 hover:cursor-pointer m-10 max-sm:m-3 rounded-[5rem]">
           <h1 className="flex items-center justify-center text-white text-5xl font-thin max-sm:text-white max-sm:mt-10">Workouts <svg className="w-8 h-8 mx-3 text-pink-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
